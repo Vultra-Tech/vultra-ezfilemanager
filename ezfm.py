@@ -1,4 +1,12 @@
-# Made by cooltech334. If you want to expand on this, please give credit to me (or not I probably will never know.).
+print('Made by cooltech334. If you want to expand on this, \n please give credit to me (or not I probably will never know.).')
+print("""
+▗▄▄▄▖▐▌▗▞▀▜▌▄▄▄▄  █  ▄  ▄▄▄     ▗▞▀▀▘▄▄▄   ▄▄▄     █  ▐▌ ▄▄▄ ▄ ▄▄▄▄    
+  █  ▐▌▝▚▄▟▌█   █ █▄▀  ▀▄▄      ▐▌  █   █ █        ▀▄▄▞▘▀▄▄  ▄ █   █   
+  █  ▐▛▀▚▖  █   █ █ ▀▄ ▄▄▄▀     ▐▛▀▘▀▄▄▄▀ █             ▄▄▄▀ █ █   █   
+  █  ▐▌ ▐▌        █  █          ▐▌                           █     ▗▄▖ 
+                                                                  ▐▌ ▐▌
+                                                                   ▝▀▜▌
+                                                                  ▐▙▄▞▘""")
 import os
 import shutil
 
@@ -15,7 +23,7 @@ FILE_CATEGORIES = {
 def organize_files(directory):
     # Ensure the directory exists
     if not os.path.exists(directory):
-        print(f"The directory '{directory}' does not exist.")
+        print(f"Error! The directory '{directory}' does not exist or is corrupted. \n Try re-entering the path or check if the name is right.")
         return
     
     # Loop through each file in the directory
@@ -47,7 +55,7 @@ def organize_files(directory):
             os.makedirs(others_path, exist_ok=True)
             shutil.move(filepath, os.path.join(others_path, filename))
     
-    print(f"Files in '{directory}' have been organized!")
+    print(f"Files in '{directory}' have been organized! \n \n Files are organized into folders by their extension. \n Files without an extension are placed into a Folder name 'Other'.")
 
 # Run the organizer on a specific directory
 if __name__ == "__main__":
