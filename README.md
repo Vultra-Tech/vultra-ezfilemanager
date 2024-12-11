@@ -3,7 +3,10 @@ Free and easy CLI-based file manager made with python.
 # Prerequisites
 Python 3.7 or a later version
 ```os``` and ```shutil```.
-# Using the file manager
+# Using the File Manager (Recommended Way)
+Download the exe or mac file, depending on your device.  
+Then just run the file.
+# Using the file manager (Advanced)
 Download and run the python file in a terminal using:
 ```python3 ezfm```.
 The program will then ask you which directory you want to organize.
